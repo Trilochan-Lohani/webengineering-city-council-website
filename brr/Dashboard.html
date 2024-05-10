@@ -1,0 +1,133 @@
+<?php
+    session_start(); // Start the session
+
+    // Check if the user is not logged in
+    if (!isset($_SESSION['email'])) {
+        // Redirect to the login page
+        header("Location: login.html");
+        exit(); // Stop further execution of the script
+    }
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/Social/logo.png">
+    <title>Benighat Rorang Rural Municipality| Dashboard</title>
+
+    <style>
+        /* Reset default margin and padding */
+        body, h1, h2, p, ul {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato', sans-serif;
+        }
+
+        /* Style the dashboard layout */
+        .dashboard {
+            display: flex;
+            flex-direction: row;
+            height: 90vh; /* Cover entire screen height */
+        }
+
+        /* Main Header*/
+        .mainheader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: brown;
+            color: white;
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            width: 25%;
+            background-color: #ffcccc;
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .sidebar ul li a:hover {
+            color: #555;
+        }
+
+        /* Main content styles */
+        .content {
+            flex: 1;
+            background-color: #eaeaea;
+            padding: 20px;
+        }
+
+        .content h2 {
+            margin-bottom: 10px;
+        }
+
+        /* Additional content styles */
+        .additional-content {
+            width: 25%;
+            background-color: #ffcccc;
+            padding: 20px;
+        }
+
+        .additional-content h2 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainheader">
+        <img src="./images/Social/logo.png" alt="Logo" style="width: 50px; height: 50px;">
+        <h2>Benighat Rorang Rural Municipality</h2>
+        <a href="#" style="color: white;">Logout</a>
+    </div>
+    <div class="dashboard">
+        <!-- Sidebar with page links -->
+        <div class="sidebar">
+            <h2>Services</h2>
+            <ul>
+                <li><a href="#">Council Tax</a></li>
+                <li><a href="#">Waste & Recycle</a></li>
+                <li><a href="#">Vital Registration</a></li>
+		<li><a href="#">School & Education</a></li>
+                <li><a href="#">Heath Care</a></li>
+                <li><a href="#">Company Registration</a></li>
+		<li><a href="#">Housing</a></li>
+                <li><a href="#">Benifits & Support</a></li>                
+            </ul>
+        </div>
+
+        <!-- Main content area -->
+        <div class="content">
+             <h2>Welcome to the Dashboard, <?php echo $_SESSION['username']; ?>!</h2>
+    		<p>Your email: <?php echo $_SESSION['email']; ?></p>
+   		 <p>Your phone: <?php echo $_SESSION['phone']; ?></p>
+    		<p>Your address: <?php echo $_SESSION['Address']; ?></p>
+    		<p>Your post code: <?php echo $_SESSION['post_code']; ?></p>    		
+        </div>
+
+        <!-- Placeholder for additional content -->
+        <div class="additional-content">
+            <h2>Additional Content</h2>
+            <p>This is a placeholder for additional content or widgets.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,320 @@
+/*body section*/
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+/*header section*/
+#header{
+    padding: 10px;
+}
+/*basic contact section*/
+.basic_contact_parent{
+    display: flex;
+    flex-direction: row;
+    background-color: #ffcccc;
+}
+.basic_contact_socialmedia{
+    float: left;
+    width: 15%;
+    padding-left: 5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.basic_contact_phone1{
+    float: right;
+    width: 85%;
+    padding-right: 2%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: right;
+}
+
+.basic_contact_phone1 a{
+    text-decoration: none;
+    color: blue;
+}
+
+.basic_contact_phone1 span{
+    font-size: 18px;
+}
+
+.basic_contact_image{
+    height: 20px;
+    width: 20px;
+    padding-right: 10px;
+}
+.basic_contact_phone{
+    height: 20px;
+    width: 20px;
+    padding-left: 30px;
+    padding-right: 5px;
+}
+
+/* Header, logos, name, and address css*/
+.header_layer1{
+    padding-left: 10px;
+    display: flex;
+    color: brown;
+}
+
+.header_layer2{
+    margin-left: 15px;
+}
+
+.header_layer2 h1{
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.header_layer2 p{
+    font-size: 22x;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/*search box implementation*/
+.search{
+    margin: auto;
+}
+
+.textbox{
+    height: 15px;
+    width: 300px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.button{
+    height: auto;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    font-weight: bolder;
+    color: azure;
+    background-color: brown;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #4d0000;
+}
+
+/*navigation bar*/
+
+ul {
+    list-style-type: none;
+    font-weight: bold; 
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    float: left; 
+  }
+  
+  li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #fcfafa;
+  }
+.navigationbar{
+    height: 40px;
+    padding-left: 15px;
+    background-color: brown;    
+}
+
+.navigationbar a:link{
+    background-color: brown;
+    height: 12px;
+}
+
+/*
+.navigationbar a:visited
+{
+    background-color: #330000;
+}
+*/
+
+.navigationbar a:hover
+{
+    background-color: #330000;
+    font-weight: bolder;
+}
+
+.navigationbar a:active
+{
+    background-color: #cc3300;
+}
+
+
+/* main section css */
+main{
+    margin: 0px;
+}
+
+/* marquee */
+.notice{
+    display: flex;
+    flex-direction: row;
+    background-color: #ffcccc;
+}
+.notice h4{
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.notice marquee{
+    margin-top: 5px;
+}
+
+
+/*Main Section*/
+.mainbody{
+    padding: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+/*footer section*/
+footer{
+    background-color: brown;
+    padding: 10px;
+}
+.impinfo{
+    display: flex;
+    flex-direction: row;
+}
+.impinfodiv{
+    width: 33.33%;
+    color: azure;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.impinfodiv a{
+    text-decoration: none;
+    color: azure;
+}
+.impinfodiv h5{
+    margin: 5px;
+}
+.impinfo h3{
+    color: azure;
+    font-weight: bolder;
+    text-align: center;    
+    text-decoration: underline;
+}
+
+.imginfoofficer{
+    height: 200px;
+    width: 200px;
+    border-radius: 6px;
+    margin: auto;
+}
+.copyrightinfo{
+    text-align: center;
+    color: azure;
+    padding: 10px;
+}
+
+/*FAQ's, Complain, and problems*/
+
+
+.complainbar h5{
+    text-decoration: none;
+    font-weight: bold;
+    color: azure;
+}
+.faq{
+    top: 400px; 
+    display: flex; 
+    flex-direction: row;
+    padding: 2px;
+    position: fixed;
+    top: 300px;
+    right: 0;
+    z-index: 5; 
+    width: 40px;
+}
+.faq img{
+    height :38px;
+    width: 40px; 
+}
+
+.faq:hover{
+    height :40px;
+    width: 40px;
+    background-color: #330000;
+    padding: 1px; 
+    width: auto; 
+    align-self: center;      
+}
+.message{
+    top: 400px; 
+    display: flex; 
+    flex-direction: row;
+    padding: 2px;
+    position: fixed;
+    top: 340px;
+    right: 0;
+    z-index: 5; 
+    width: 40px;
+}
+.message img{
+    height :38px;
+    width: 40px; 
+}
+.message:hover{
+    height :40px;
+    width: 40px;
+    background-color: #330000;
+    padding: 1px;
+    width: auto;
+    align-self: center; 
+}
+
+.problems{
+    top: 400px; 
+    display: flex; 
+    flex-direction: row;
+    padding: 2px;
+    position: fixed;
+    top: 380px;
+    right: 0;
+    z-index: 5; 
+    width: 40px;  
+}
+.problems img{
+    height :38px;
+    width: 40px; 
+}
+.problems:hover{
+    height :40px;
+    width: 40px;
+    background-color: #330000;
+    padding: 1px;
+    width: auto;
+    align-self: center; 
+}
+
+/*Contact us Page*/
+.contactusmain{
+    margin: 15px;
+}
+.contactusbar{
+    display: flex;
+    flex-direction: row;
+}
+.contactusbarmedia{
+    float: left;
+    width: 50%;
+}
+.contactusbarform{
+    float: right;
+    width: 50%;
+}

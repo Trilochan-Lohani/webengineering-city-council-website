@@ -1,0 +1,50 @@
+body{
+    margin: 0px;
+}
+
+
+.login
+{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 25px;
+    background-color: #ffcccc;
+    border-radius: 15px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 3px solid #4d0000;
+}
+.textbox{
+    height: 15px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.button{
+    height: auto;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    font-weight: bolder;
+    color: azure;
+    background-color: brown;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #4d0000;
+}
+
+input[type='checkbox'] {
+    accent-color: brown;
+    height: 15px;
+    width: 15px;
+}
+

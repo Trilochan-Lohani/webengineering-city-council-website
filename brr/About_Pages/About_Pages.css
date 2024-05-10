@@ -1,0 +1,25 @@
+.aboutmain{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.aboutmaincontainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.leftdiv{
+    width:70%;
+    float: left;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rightdiv{
+    width: 30%;
+    float: right;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

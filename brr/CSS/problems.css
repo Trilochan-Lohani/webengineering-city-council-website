@@ -1,0 +1,20 @@
+.problemsmain{
+    padding: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.problemsform
+{
+    display: flex;
+    flex-direction: column;    
+}
+
+.problemsformselect{
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.problemssubmitbutton{
+    width: 200px;
+}

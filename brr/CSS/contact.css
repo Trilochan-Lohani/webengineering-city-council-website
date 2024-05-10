@@ -1,0 +1,75 @@
+
+.contactdetailsandforms{
+    display: flex;
+}
+
+
+.contactdetails{
+    width: 50%;
+    float: left;
+    padding: 5px;
+    margin-left: 5%;
+}
+
+.contactdetails h3{
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+.contactdetailsinner{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.contactdetailsinner img{
+    height: 15px;
+    width: 15px;
+    padding-right: 7px;
+    margin-bottom: 10px;
+}
+
+.socialmedia{
+    display: flex;
+    justify-content: space-between;
+}
+
+#socialmedia img{
+    height: 100px;
+    width: 100px;
+}
+
+.contactform{
+    width: 100%;
+    padding: 5px;   
+}
+.contactforminner{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+}
+
+.contactforminner{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.contactforminner h3{
+    margin-top: 10px;;
+    margin-bottom: 3px;
+}
+.textboxcontact{
+    width: 100%;
+}
+
+.googlemap{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.googlemap h3{
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+.googlemap hr{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}

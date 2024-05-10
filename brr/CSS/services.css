@@ -1,0 +1,56 @@
+.services{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 6px;
+    margin: 2px solid;
+}
+
+.services a{
+   text-decoration: none;
+   font-size: 20px;
+   color: black;
+}
+
+.services a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+    color: blue;
+ }
+
+.services img{
+    height: 150px;
+    width: 150px;
+    padding-top: 30px;
+}
+
+.leftdiv{
+    width: 33.33%;
+    float: left;
+    margin-right: 3px;
+    border: 2px solid;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.middiv{
+    width:33.33%;
+    float: left;
+    margin-right: 3px;
+    margin-left: 3px;
+    border: 2px solid;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.rightdiv{
+    width: 33.33%;
+    float: right;
+    margin-left: 3px;
+    border: 2px solid;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.leftdiv:hover , .middiv:hover, .rightdiv:hover{
+    background-color:#ffcccc;
+}
+
